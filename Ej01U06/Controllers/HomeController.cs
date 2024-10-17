@@ -13,10 +13,15 @@ namespace Ej01U06.Controllers
             _logger = logger;
         }
 
-        public string Index()
+        public IActionResult Index()
         {
-            return "Hola Mundo!";
+            return View();
         }
+
+        //public string Index()
+        //{
+        //    return "Hola Mundo!";
+        //}
 
         public string Auri()
         {
