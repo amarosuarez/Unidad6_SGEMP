@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var currentTime = DateTime.Now;
+}
+
+<div class="text-center">
+    <h1>Hola son las @currentTime.ToString("HH:mm")</h1>
+    <p>@if (currentTime.Hour > 12)
+        {
+            @:Se han pasado las 12 del medio día
+        } else
+        {
+            @:No se han pasado las 12 del medio día
+        }
+    </p>
+</div>
